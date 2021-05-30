@@ -28,10 +28,10 @@
         "Search History.csv"
     ],
     "pre_install": [
-        "Add-Content \"$dir\\Everything.ini\" $null",
-        "Add-Content \"$dir\\Bookmarks.csv\" $null",
-        "Add-Content \"$dir\\Run History.csv\" $null",
-        "Add-Content \"$dir\\Search History.csv\" $null"
+        "Add-Content \"$persist_dir\\Everything.ini\" $null",
+        "Add-Content \"$persist_dir\\Bookmarks.csv\" $null",
+        "Add-Content \"$persist_dir\\Run History.csv\" $null",
+        "Add-Content \"$persist_dir\\Search History.csv\" $null"
     ],
     "checkver": "Download Everything ([\\d.]+)",
     "autoupdate": {
