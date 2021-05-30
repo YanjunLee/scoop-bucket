@@ -22,7 +22,7 @@
             "Everything"
         ]
     ],
-    "persist" [
+    "persist": [
         "Logs",
         "Everything.ini",
         "Bookmarks.csv",
