@@ -29,10 +29,10 @@
         "eeLM.ini"
     ],
     "pre_install": [
-        "Add-Content \"$persist\\eeCommon.ini\" $null;",
-        "Add-Content \"$persist\\eeConfig.ini\" $null;",
-        "Add-Content \"$persist\\eePlugins.ini\" $null;",
-        "Add-Content \"$persist\\eeLM.ini\" $null;"
+        "Add-Content \"$persist_dir\\eeCommon.ini\" $null;",
+        "Add-Content \"$persist_dir\\eeConfig.ini\" $null;",
+        "Add-Content \"$persist_dir\\eePlugins.ini\" $null;",
+        "Add-Content \"$persist_dir\\eeLM.ini\" $null;"
     ],
     "checkver": {
         "url": "https://www.emeditor.com/download/",
