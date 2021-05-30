@@ -21,7 +21,6 @@
         ]
     ],
     "persist": [
-        "Macros",
         "AppData",
         "User",
         "eeCommon.ini",
