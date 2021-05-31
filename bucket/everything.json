@@ -29,10 +29,10 @@
     ],
     "pre_install": [
         "if (!(test-path \"$persist_dir\")) { mkdir \"$persist_dir\" }",
-        "Add-Content \"$persist_dir\\Everything.ini\" $null",
-        "Add-Content \"$persist_dir\\Bookmarks.csv\" $null",
-        "Add-Content \"$persist_dir\\Run History.csv\" $null",
-        "Add-Content \"$persist_dir\\Search History.csv\" $null"
+        "Add-Content \"$persist_dir\\Everything.ini\" $null;",
+        "Add-Content \"$persist_dir\\Bookmarks.csv\" $null;",
+        "Add-Content \"$persist_dir\\Run History.csv\" $null;",
+        "Add-Content \"$persist_dir\\Search History.csv\" $null;"
     ],
     "checkver": "Download Everything ([\\d.]+)",
     "autoupdate": {
