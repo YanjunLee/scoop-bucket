@@ -28,6 +28,7 @@
         "Search History.csv"
     ],
     "pre_install": [
+        "if (!(test-path \"$persist_dir\")) { mkdir \"$persist_dir\" }",
         "Add-Content \"$persist_dir\\Everything.ini\" $null",
         "Add-Content \"$persist_dir\\Bookmarks.csv\" $null",
         "Add-Content \"$persist_dir\\Run History.csv\" $null",
