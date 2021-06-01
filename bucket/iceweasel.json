@@ -1,0 +1,61 @@
+{
+    "version": "89.0",
+    "description": "Iceweasel web browser.",
+    "homepage": "https://sourceforge.net/projects/libportable/",
+    "license": "MPL 2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://sourceforge.net/projects/libportable/files/Iceweasel/Stable/89.x/x86_64/Iceweasel-v89.0.zh_CN_win64_clang_pgo.7z",
+            "hash": "md5:70a80b2b5de3c900e974eb6576d84100",
+            "extract_dir": "Iceweasel_x64"
+        },
+        "32bit": {
+            "url": "https://sourceforge.net/projects/libportable/files/Iceweasel/Stable/89.x/i686/Iceweasel-v89.0.zh_CN_win32_clang_pgo.7z",
+            "hash": "md5:f52ae5f8ad0477aa043926082e93ae55",
+            "extract_dir": "Iceweasel_x86"
+        }
+    },
+    "pre_install": [
+        "if (!(test-path \"$persist_dir\")) { mkdir \"$persist_dir\" | Out-Null }",
+        "if (!(test-path \"$persist_dir\\App\")) { mkdir \"$persist_dir\\App\" | Out-Null }",
+        "if (!(test-path \"$persist_dir\\portable.ini\")) { copy-item \"$original_dir\\App\\portable(example).ini\" -Destination \"$persist_dir\\App\\portable.ini\" }"
+    ],
+    "bin": [
+        [
+            "App\\iceweasel.exe",
+            "iceweasel"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "App\\iceweasel.exe",
+            "IceWeasel"
+        ]
+    ],
+    "persist": [
+        "Profiles",
+        "App\\portable.ini"
+    ],
+    "checkver": {
+        "url": "https://sourceforge.net/projects/libportable/files/Iceweasel/",
+        "regex": "Iceweasel (\\d+\\.\\d+)\\(x86,x64\\)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://sourceforge.net/projects/libportable/files/Iceweasel/Stable/$majorVersion.x/x86_64/Iceweasel-v$version.zh_CN_win64_clang_pgo.7z",
+                "hash": {
+                    "url": "https://jaist.dl.sourceforge.net/project/libportable/Iceweasel/update_info.txt",
+                    "regex": "\\[win64\\.zh-CN\\]\\r?\\nmd5=(.+)\\r?\\n"
+                }
+            },
+            "32bit": {
+                "url": "https://sourceforge.net/projects/libportable/files/Iceweasel/Stable/$majorVersion.x/i686/Iceweasel-v$version.zh_CN_win32_clang_pgo.7z",
+                "hash": {
+                    "url": "https://jaist.dl.sourceforge.net/project/libportable/Iceweasel/update_info.txt",
+                    "regex": "\\[win32\\.zh-CN\\]\\r?\\nmd5=(.+)\\r?\\n"
+                }
+            }
+        }
+    }
+}
