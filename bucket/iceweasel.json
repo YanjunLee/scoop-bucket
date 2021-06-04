@@ -18,7 +18,7 @@
     "pre_install": [
         "if (!(test-path \"$persist_dir\")) { mkdir \"$persist_dir\" | Out-Null }",
         "if (!(test-path \"$persist_dir\\App\")) { mkdir \"$persist_dir\\App\" | Out-Null }",
-        "if (!(test-path \"$persist_dir\\portable.ini\")) { copy-item \"$original_dir\\App\\portable(example).ini\" -Destination \"$persist_dir\\App\\portable.ini\" }"
+        "if (!(test-path \"$persist_dir\\App\\portable.ini\")) { [IO.File]::WriteAllLines(\"$persist_dir\\App\\portable.ini\" ,((get-content \"$original_dir\\App\\portable(example).ini\" -Encoding utf8) -replace 'Update=1', 'Update=0')) }"
     ],
     "bin": [
         [
