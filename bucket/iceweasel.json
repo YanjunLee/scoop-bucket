@@ -37,7 +37,7 @@
         "App\\portable.ini"
     ],
     "checkver": {
-        "url": "https://sourceforge.net/projects/libportable/files/Iceweasel/",
+        "url": "https://sourceforge.net/projects/libportable/files/Iceweasel/README",
         "regex": "Iceweasel (\\d+\\.\\d+)\\(x86,x64\\)"
     },
     "autoupdate": {
