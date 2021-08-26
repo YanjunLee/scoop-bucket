@@ -1,0 +1,46 @@
+{
+    "version": "91.0.2",
+    "description": "Firefox 浏览器中文版本",
+    "homepage": "https://www.mozilla.org/firefox/",
+    "license": "MPL-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "",
+            "hash": ""
+        },
+        "32bit": {
+            "url": "",
+            "hash": ""
+        }
+    },
+    "extract_dir": "core",
+    "bin": "firefox.exe",
+    "shortcuts": [
+        [
+            "firefox.exe",
+            "Firefox"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.mozilla.org/en-US/firefox/notes/",
+        "regex": "<div class=\"c-release-version\">([\\d.]+)</div>"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://archive.mozilla.org/pub/firefox/releases/$version/win64/zh-CN/Firefox%20Setup%20$version.exe#/dl.7z",
+                "hash": {
+                    "url": "https://archive.mozilla.org/pub/firefox/releases/$version/SHA512SUMS",
+                    "regex": "$sha512\\s+win64/zh-CN/$basename"
+                }
+            },
+            "32bit": {
+                "url": "https://archive.mozilla.org/pub/firefox/releases/$version/win32/zh-CN/Firefox%20Setup%20$version.exe#/dl.7z",
+                "hash": {
+                    "url": "https://archive.mozilla.org/pub/firefox/releases/$version/SHA512SUMS",
+                    "regex": "$sha512\\s+win32/zh-CN/$basename"
+                }
+            }
+        }
+    }
+}
