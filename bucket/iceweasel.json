@@ -38,7 +38,7 @@
     ],
     "checkver": {
         "url": "https://master.dl.sourceforge.net/project/libportable/Iceweasel/README?viasf=1",
-        "regex": "Iceweasel (\\d+\\.\\d+)\\(x86,x64\\)"
+        "regex": "Iceweasel ([\\d\\.]+)\\(x86,x64\\)"
     },
     "autoupdate": {
         "architecture": {
