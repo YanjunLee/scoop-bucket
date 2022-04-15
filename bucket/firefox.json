@@ -1,5 +1,5 @@
 {
-    "version": "98.0.1",
+    "version": "99.0.1",
     "description": "Popular open source web browser.",
     "homepage": "https://www.mozilla.org/firefox/",
     "license": "MPL-2.0",
@@ -10,7 +10,7 @@
         "For details: https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles"
     ],
     "architecture": {
-
+        
     },
     "extract_dir": "core",
     "post_install": [
