@@ -22,6 +22,7 @@
     ],
     "persist": [
         "AppData",
+        "Help",
         "User",
         "eeCommon.ini",
         "eeConfig.ini",
@@ -29,11 +30,10 @@
         "eeLM.ini"
     ],
     "pre_install": [
-        "if (!(test-path \"$persist_dir\")) { mkdir \"$persist_dir\" }",
-        "Add-Content \"$persist_dir\\eeCommon.ini\" $null;",
-        "Add-Content \"$persist_dir\\eeConfig.ini\" $null;",
-        "Add-Content \"$persist_dir\\eePlugins.ini\" $null;",
-        "Add-Content \"$persist_dir\\eeLM.ini\" $null;"
+        "if(!(Test-Path \"$persist_dir\\eeCommon.ini\")) { Add-Content \"$dir\\eeCommon.ini\" $null }",
+        "if(!(Test-Path \"$persist_dir\\eeConfig.ini\")) { Add-Content \"$dir\\eeConfig.ini\" $null }",
+        "if(!(Test-Path \"$persist_dir\\eeLM.ini\")) { Add-Content \"$dir\\eeLM.ini\" $null }",
+        "if(!(Test-Path \"$persist_dir\\eePlugins.ini\")) { Add-Content \"$dir\\eePlugins.ini\" $null }"
     ],
     "checkver": {
         "url": "https://www.emeditor.com/download/",
