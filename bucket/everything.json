@@ -3,6 +3,10 @@
     "description": "Locate files and folders by name instantly.",
     "homepage": "https://www.voidtools.com",
     "license": "MIT",
+    "notes": [
+        "添加 Everything 到资源管理器右键菜单：",
+        "[选项] / [集成到资源管理器右键菜单]"
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.voidtools.com/Everything-1.4.1.1018.x64.zip",
@@ -13,26 +17,36 @@
             "hash": "e44d0b132c34c834de552f71154e7b86b44145eb1f810be96010b4e1dd4fcd2a"
         }
     },
+    "persist": [
+        "Logs",
+        "Bookmarks.csv",
+        "Everything.ini",
+        "Filters.csv",
+        "Run History.csv",
+        "Search History.csv"
+    ],
+    "pre_install": [
+        "ensure \"$persist_dir\" | Out-Null",
+        "'Bookmarks.csv', 'Everything.ini', 'Filters.csv', 'Run History.csv', 'Search History.csv' | ForEach-Object {",
+        "  if (!(Test-Path \"$persist_dir\\$_\")) {",
+        "    Add-Content \"$dir\\$_\" $null",
+        "  }",
+        "}"
+    ],
+    "pre_uninstall": [
+        "Stop-Process -Name 'everything' -ErrorAction SilentlyContinue",
+        "if (Get-Service 'Everything' -ErrorAction SilentlyContinue) {",
+        "    if (!(is_admin)) { error 'Admin rights are required to stop Everything service'; break }",
+        "    Stop-Service -Name 'Everything' -Force -ErrorAction SilentlyContinue | Out-Null",
+        "    if ($cmd -eq 'uninstall') { sc.exe delete 'Everything' }",
+        "}"
+    ],
     "bin": "Everything.exe",
     "shortcuts": [
         [
             "Everything.exe",
             "Everything"
         ]
-    ],
-    "persist": [
-        "Logs",
-        "Everything.ini",
-        "Bookmarks.csv",
-        "Run History.csv",
-        "Search History.csv"
-    ],
-    "pre_install": [
-        "if (!(test-path \"$persist_dir\")) { mkdir \"$persist_dir\" }",
-        "Add-Content \"$persist_dir\\Everything.ini\" $null;",
-        "Add-Content \"$persist_dir\\Bookmarks.csv\" $null;",
-        "Add-Content \"$persist_dir\\Run History.csv\" $null;",
-        "Add-Content \"$persist_dir\\Search History.csv\" $null;"
     ],
     "checkver": "Download Everything ([\\d.]+)",
     "autoupdate": {
