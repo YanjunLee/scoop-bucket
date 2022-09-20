@@ -1,17 +1,17 @@
 {
-    "version": "104.0.2",
+    "version": "105.0",
     "description": "Iceweasel web browser.",
     "homepage": "https://sourceforge.net/projects/libportable/",
     "license": "MPL 2.0",
     "architecture": {
         "64bit": {
-            "url": "https://sourceforge.net/projects/libportable/files/Iceweasel/Stable/104.x/x86_64/Iceweasel-v104.0.2.zh_CN_win64_clang_pgo.7z",
-            "hash": "md5:e85d115e6eb6d07501ed1959eb37e003",
+            "url": "https://sourceforge.net/projects/libportable/files/Iceweasel/Stable/105.x/x86_64/Iceweasel-v105.0.zh_CN_win64_clang_pgo.7z",
+            "hash": "md5:0eaaf545fae8b3fe70f311d8dd94d9fc",
             "extract_dir": "Iceweasel_x64"
         },
         "32bit": {
-            "url": "https://sourceforge.net/projects/libportable/files/Iceweasel/Stable/104.x/i686/Iceweasel-v104.0.2.zh_CN_win32_clang_pgo.7z",
-            "hash": "md5:854698d0d0ad2ad8df720853a44595e3",
+            "url": "https://sourceforge.net/projects/libportable/files/Iceweasel/Stable/105.x/i686/Iceweasel-v105.0.zh_CN_win32_clang_pgo.7z",
+            "hash": "md5:17d5213e9e0f50ed660950280a56a176",
             "extract_dir": "Iceweasel_x86"
         }
     },
