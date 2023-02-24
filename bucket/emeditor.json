@@ -36,8 +36,8 @@
         "if(!(Test-Path \"$persist_dir\\eePlugins.ini\")) { Add-Content \"$dir\\eePlugins.ini\" $null }"
     ],
     "checkver": {
-        "url": "https://www.emeditor.com/download/",
-        "re": "<h3>Download latest version: v([\\d.]+)</h3>"
+        "url": "https://www.emeditor.com/en/downloads",
+        "re": "v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
