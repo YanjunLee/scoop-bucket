@@ -37,7 +37,7 @@
     ],
     "checkver": {
         "url": "https://support.emeditor.com/en/downloads",
-        "re": "<td>v([\d.]+?\.(\d{1,2}|[0-8]\d{2}))</td>"
+        "re": "<td>v([\\d.]+?\\.(\d{1,2}|[0-8]\\d{2}))</td>"
     },
     "autoupdate": {
         "architecture": {
