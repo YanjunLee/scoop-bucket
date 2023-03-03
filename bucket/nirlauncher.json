@@ -1,6 +1,6 @@
 {
     "##": "The applications listed below can be kept up to date by running https://github.com/rasa/scoops/blob/master/nlp2json.py",
-    "version": "1.23.69",
+    "version": "1.23.70",
     "description": "More than 200 portable freeware utilities for Windows, all of them developed for NirSoft Web site during the last few years",
     "homepage": "https://launcher.nirsoft.net/",
     "license": "Freeware",
