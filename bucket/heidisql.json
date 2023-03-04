@@ -16,7 +16,7 @@
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) { mkdir \"$persist_dir\" | Out-Null }",
         "Add-Content \"$persist_dir\\portable_settings.txt\" $null;",
-        "Add-Content \"$persist_dir\\tab.ini\" $null;"
+        "Add-Content \"$persist_dir\\tabs.ini\" $null;"
     ],
     "bin": "heidisql.exe",
     "shortcuts": [
