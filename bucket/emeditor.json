@@ -37,15 +37,15 @@
     ],
     "checkver": {
         "url": "https://support.emeditor.com/en/downloads",
-        "re": "<td>v([\\d.]+?\\.(\\d{1,2}|[0-8]\\d{2}))</td>"
+        "re": "<td>v([\\d.]+)</td>"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://download.emeditor.info/emed64_$version_portable.zip"
+                "url": "https://emeditor.blob.core.windows.net/emed64_$version_portable.zip"
             },
             "32bit": {
-                "url": "https://download.emeditor.info/emed32_$version_portable.zip"
+                "url": "https://emeditor.blob.core.windows.net/emed32_$version_portable.zip"
             }
         }
     }
