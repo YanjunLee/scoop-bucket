@@ -29,8 +29,8 @@
         "metapath.ini"
     ],
     "checkver": {
-        "github": "https://github.com/zufuliu/notepad2",
-        "regex": "Notepad2_en_x64_v([r\\d.]+)\\.zip"
+        "url": "https://github.com/zufuliu/notepad2/releases",
+        regex: ">v([\\d\\.r]+)</h2>"
     },
     "autoupdate": {
         "architecture": {
