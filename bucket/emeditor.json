@@ -37,7 +37,7 @@
     ],
     "checkver": {
         "url": "https://www.emeditor.com/",
-        "regex": "EmEditor v([\\d.]+) released"
+        "regex": "EmEditor v([\\d.]+) [Rr]eleased"
     },
     "autoupdate": {
         "architecture": {
