@@ -1,5 +1,5 @@
 {
-    "version": "6.3.0.73",
+    "version": "6.3.0.78",
     "description": "A revolutionary search utility.",
     "homepage": "https://www.listary.com",
     "license": "Shareware",
@@ -23,7 +23,5 @@
         "UserProfile",
         "DataFolderRedirection.txt"
     ],
-    "pre_install": [
-        "if(!(Test-Path \"$persist_dir\\DataFolderRedirection.txt\")) { Add-Content \"$dir\\DataFolderRedirection.txt\" \".\" }"
-    ]
+    "pre_install": "if(!(Test-Path \"$persist_dir\\DataFolderRedirection.txt\")) { Add-Content \"$dir\\DataFolderRedirection.txt\" \".\" }"
 }
