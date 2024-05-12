@@ -24,6 +24,6 @@
         "DataFolderRedirection.txt"
     ],
     "pre_install": [
-        "if(!(Test-Path \"$persist_dir\\DataFolderRedirection.txt\")) { Add-Content \"$dir\\DataFolderRedirection.txt\" "." }"
+        "if(!(Test-Path \"$persist_dir\\DataFolderRedirection.txt\")) { Add-Content \"$dir\\DataFolderRedirection.txt\" \".\" }"
     ]
 }
