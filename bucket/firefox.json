@@ -1,5 +1,5 @@
 {
-    "version": "125.0.3",
+    "version": "126.0",
     "description": "Popular open source web browser.",
     "homepage": "https://www.mozilla.org/firefox/",
     "license": "MPL-2.0",
@@ -11,16 +11,16 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://archive.mozilla.org/pub/firefox/releases/125.0.3/win64/zh-CN/Firefox%20Setup%20125.0.3.exe#/dl.7z",
-            "hash": "sha512:fb81d46155069e4a2d58e14ad8165a2b75a2fb8cafbd7d7d014081b6a6085194f3d8821fff09b0b053f48a9adae65a02b6feba5d83d1eb44ba5a1981cff3487f"
+            "url": "https://archive.mozilla.org/pub/firefox/releases/126.0/win64/zh-CN/Firefox%20Setup%20126.0.exe#/dl.7z",
+            "hash": "sha512:2f5212a829dbf0482e8e53ba17d79ad3f4fd0631ec31b5e58a90abd5a30d2d3469e9fecc6e8c65ea877b71c3df55d383ea48bd61d379b31716564bfe51cb6fe1"
         },
         "32bit": {
-            "url": "https://archive.mozilla.org/pub/firefox/releases/125.0.3/win32/zh-CN/Firefox%20Setup%20125.0.3.exe#/dl.7z",
-            "hash": "sha512:4e83e084d59e23747030bc9587072ac7aaa11774b286c85b4c56522d649780b8c0f2b256c4176bee6ddafa596f28ad37fcefee5f2bfce228d9bf1535f06cd9af"
+            "url": "https://archive.mozilla.org/pub/firefox/releases/126.0/win32/zh-CN/Firefox%20Setup%20126.0.exe#/dl.7z",
+            "hash": "sha512:9bfc8a6be9c17916c70dedf9b8072b011599e90388c9763abe71c028010a59238420f58011463efeb5ad444f9a65179392f3661f755d8acd243b4f580f9b97ea"
         },
         "arm64": {
-            "url": "https://archive.mozilla.org/pub/firefox/releases/125.0.3/win64-aarch64/zh-CN/Firefox%20Setup%20125.0.3.exe#/dl.7z",
-            "hash": "sha512:0c8a5222f870760e835b606cfe6b0fa953c681fcdcc7486cfa11e3c093910eed73b0b38d79c8570d294afb48045320c3474aaf50cabc057262fd235a916f10c9"
+            "url": "https://archive.mozilla.org/pub/firefox/releases/126.0/win64-aarch64/zh-CN/Firefox%20Setup%20126.0.exe#/dl.7z",
+            "hash": "sha512:287930a79a32a86e81c2276d342ad6cbdeff67300d9833a6fc2eaaca638c925987aeeac4b40f6db5a98b0902600b96d8b4b1d7e9c5d2180f90526b00c54c5614"
         }
     },
     "extract_dir": "core",
