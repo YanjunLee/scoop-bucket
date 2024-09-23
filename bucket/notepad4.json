@@ -20,13 +20,13 @@
             "Notepad4"
         ],
         [
-            "metapath.exe",
-            "metapath"
+            "metepath.exe",
+            "metepath"
         ]
     ],
     "persist": [
         "Notepad4.ini",
-        "metapath.ini"
+        "metepath.ini"
     ],
     "checkver": {
         "url": "https://github.com/zufuliu/notepad4/releases",
