@@ -37,16 +37,14 @@
     ],
     "checkver": {
         "url": "https://www.emeditor.com/",
-        "regex": "EmEditor v([\\d.]+) [Rr]eleased"
+        "regex": "EmEditor v([\\d.]+) (R|r)eleased"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
                 "url": "https://emeditor.blob.core.windows.net/emed64_$version_portable.zip"
-            },
-            "32bit": {
-                "url": "https://emeditor.blob.core.windows.net/emed32_$version_portable.zip"
             }
         }
     }
 }
+
