@@ -1,12 +1,12 @@
 {
     "homepage": "https://www.emeditor.com/",
-    "version": "25.3.1",
+    "version": "25.3.2",
     "description": "EmEditor is a fast, lightweight, yet extensible, easy-to-use text editor for Windows.",
     "license": "https://www.emeditor.com/#toggle-id-4",
     "architecture": {
         "64bit": {
-            "url": "https://emeditor.blob.core.windows.net/emed64_25.3.1_portable.zip",
-            "hash": "c577a662d89daad32fa3edc2e9b05fa0f3c459d47c8bee207edb7a60800d2db0"
+            "url": "https://emeditor.blob.core.windows.net/emed64_25.3.2_portable.zip",
+            "hash": "7c3dd16e5b6527ecbd72d1518d145f49a2d684cb9b4e9c95c2110bf37ab2d8e9"
         },
         "32bit": {
             "url": "https://emeditor.blob.core.windows.net/emed32_25.1.4_portable.zip",
